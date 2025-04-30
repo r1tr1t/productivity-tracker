@@ -62,9 +62,9 @@ class TimeLogSerializer(serializers.ModelSerializer):
                 raise serializers.ValidationError("Start time must be before end time")
                 
         # Validate activity belongs to activity_type
-        if data.get('activity') and data.get('activity_type'):
-            if data['activity'].activity_type != data['activity_type']:
-                raise serializers.ValidationError("Activity does not belong to selected activity type")
+        # if data.get('activity') and data.get('activity_type'):
+        #     if data['activity'].activity_type != data['activity_type']:
+        #         raise serializers.ValidationError("Activity does not belong to selected activity type")
                 
         return data
 

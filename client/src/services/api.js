@@ -31,6 +31,7 @@ api.interceptors.request.use(
 const apiService = {
   // Activity Types
   getActivityTypes: () => api.get('/activity-types/'),
+  createDefaults: () => api.get('/activity-types/create_defaults'),
   createActivityType: (data) => api.post('/activity-types/', data),
   updateActivityType: (id, data) => api.put(`/activity-types/${id}/`, data),
   deleteActivityType: (id) => api.delete(`/activity-types/${id}/`),
