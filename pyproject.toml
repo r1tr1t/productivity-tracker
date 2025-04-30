@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-vite-starter"
+name = "productivity-tracker"
 version = "0.1.0"
 description = ""
 authors = ["Joseph Ditton <jditton.atomic@gmail.com>"]
@@ -7,9 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-django = "^5.0.0"
-requests = "^2.31.0"
-python-dotenv = "^1.0.0"
+django = "^5.2"
+requests = "^2.32.3"
+python-dotenv = "^1.1.0"
+djangorestframework = "^3.16.0"
 
 
 [build-system]
